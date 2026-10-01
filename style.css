@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+/* ==============================
+   CONFIGURAÇÃO GERAL
+   ============================== */
+
+/* Seletor por elemento */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1ed;
+  color: #292522;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ==============================
+   CABEÇALHO
+   ============================== */
+
+/* Seletor por ID */
+#cabecalho {
+  position: relative;
+  width: 100%;
+  min-height: 190px;
+  box-sizing: border-box;
+  padding: 45px 230px 45px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #3d302a, #6b5143);
+  color: #fffaf5;
+  border-radius: 0 0 28px 28px;
+}
+
+.dados-cabecalho h1 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.dados-cabecalho p {
+  margin: 8px 0 0;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+/* Foto no canto superior direito */
+.img01 {
+  position: absolute;
+  top: 25px;
+  right: 7%;
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #e7d6c8;
+}
+
+/* ==============================
+   SEÇÕES
+   ============================== */
+
+/* Seletor por classe */
+.curriculo main {
+  width: min(900px, 88%);
+  margin: 25px auto;
+}
+
+.curriculo section {
+  background-color: #fffdf9;
+  padding: 24px 30px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(62, 48, 42, 0.09);
+  box-sizing: border-box;
+}
+
+.curriculo h2,
+.curriculo h3 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.curriculo h2 {
+  color: #62483b;
+  border-bottom: 2px solid #d9c3b4;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.curriculo h3 {
+  color: #49372f;
+}
+
+.curriculo ul {
+  padding-left: 22px;
+}
+
+.curriculo li {
+  margin-bottom: 8px;
+}
+
+/* ==============================
+   CONTATO / REDES SOCIAIS
+   ============================== */
+
+.contato ul {
+  list-style-position: outside;
+}
+
+/* Logos pequenas e antes do texto */
+.rede-social {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.rede-social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ==============================
+   LINKS
+   ============================== */
+
+a {
+  color: #76516a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Pseudo-classe */
+a:hover {
+  color: #b05d78;
+  text-decoration: underline;
+}
+
+/* Seletor por atributo */
+a[target="_blank"] {
+  font-weight: 600;
+}
+
+/* ==============================
+   EXPERIÊNCIA
+   ============================== */
+
+.item-experiencia {
+  border-left: 4px solid #b78f78;
+  padding-left: 18px;
+}
+
+.periodo {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #b78f78;
+  text-underline-offset: 4px;
+}
+
+/* ==============================
+   EDUCAÇÃO
+   ============================== */
+
+.item-educacao {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.item-educacao img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.item-educacao h3 {
+  margin: 0 0 5px;
+}
+
+.item-educacao p {
+  margin: 0;
+}
+
+/* ==============================
+   BOTÃO
+   ============================== */
+
+.area-botao {
+  text-align: center;
+}
+
+#abrir-modal {
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #62483b;
+  color: #ffffff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#abrir-modal:hover {
+  background-color: #7b5a4a;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+/* ==============================
+   FORMULÁRIO
+   ============================== */
+
+dialog {
+  width: min(500px, 85%);
+  border: 0;
+  border-radius: 16px;
+  padding: 28px;
+  background-color: #fffdf9;
+  color: #292522;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+dialog::backdrop {
+  background-color: rgba(41, 37, 34, 0.65);
+}
+
+/* Seletor por atributo */
+input[type="text"],
+input[type="url"],
+input[type="tel"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #cdbbae;
+  border-radius: 8px;
+  background-color: #fffaf6;
+  color: #292522;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+dialog button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #62483b;
+  color: #ffffff;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+dialog button:hover {
+  background-color: #7b5a4a;
+  cursor: pointer;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+
+@media (max-width: 600px) {
+
+  #cabecalho {
+    min-height: 250px;
+    padding: 30px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    position: static;
+    display: block;
+    margin: 20px auto 0;
+    width: 115px;
+    height: 115px;
+  }
+
+  #cabecalho {
+    flex-direction: column;
+  }
+
+  .curriculo main {
+    width: 92%;
+  }
+
+  .curriculo section {
+    padding: 20px;
+  }
+
+  .rede-social {
+    flex-wrap: wrap;
+  }
+
+  .item-educacao {
+    align-items: flex-start;
+  }
+}
